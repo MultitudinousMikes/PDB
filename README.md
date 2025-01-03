@@ -2,35 +2,33 @@
 Project Title: Partial and Symbolic Pattern Database Implementations  
 
 Description  
-This project implements Partial Pattern Databases (PPDB) and Symbolic Pattern Databases (SPDB) for state-space search problems, such as sliding tile puzzles (e.g., 3x3, 4x4, and 5x5).  
+  This project implements Partial Pattern Databases (PPDB) and Symbolic Pattern Databases (SPDB) for state-space search problems, such as sliding tile puzzles (e.g., 3x3, 4x4, and 5x5).  
 
 It features two search algorithms:  
-	Partial A*: Uses PPDB as heuristics for faster state expansion.  
-	Symbolic Search: Utilizes SPDBs and Binary Decision Diagrams (BDDs) to represent large state spaces efficiently.  
+  Partial A*: Uses PPDB as heuristics for faster state expansion.  
+  Symbolic Search: Utilizes SPDBs and Binary Decision Diagrams (BDDs) to represent large state spaces efficiently.  
 
-This repository includes:  
-	PPDB generation using reverse Breadth-First Search.  
-	SPDB construction using symbolic operations with BDDs.  
-	Search algorithms: Partial A* and Symbolic Search.  
+This repository includes:    
+  PPDB generation using reverse Breadth-First Search.  
+  SPDB construction using symbolic operations with BDDs.  
+  Search algorithms: Partial A* and Symbolic Search.  
 
-Performance measurements: 
-	runtime
- 	memory usage
-  	solution cost
+Performance measurements:  
+  runtime  
+  memory usage  
+  solution cost  
 
-Commands for executing the program:
+Commands for executing the program:  
+  pip install pyeda
+  python run_experiments.py
 
-pip install pyeda
-
-python run_experiments.py
-
-Program Breakdown
-1. Run Experiments (run_experiments.py)​\n
- 	a. Initialize Map and States: initial_map, start_state, goal_state
-	b. Run Full Pattern Database (PDB): run_pdb
-	c. Run Partial Pattern Database (PPDB): run_ppdb
-	d. Run Symbolic Pattern Database (SPDB): run_spdb
-	e. Run Partial Symbolic Pattern Database (PSPDB): run_pspdb
+Program Breakdown  
+1. Run Experiments (run_experiments.py)​  
+  a. Initialize Map and States: initial_map, start_state, goal_state  
+  b. Run Full Pattern Database (PDB): run_pdb  
+  c. Run Partial Pattern Database (PPDB): run_ppdb  
+  d. Run Symbolic Pattern Database (SPDB): run_spdb  
+  e. Run Partial Symbolic Pattern Database (PSPDB): run_pspdb  
 2. Full Pattern Database (apdb.py)
 	a. Construct PDB: construct_pdb
 	b. Memory Measurement: pdb_memory
