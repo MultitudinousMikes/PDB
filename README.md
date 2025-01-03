@@ -19,8 +19,8 @@ Performance measurements:
   solution cost  
 
 Commands for executing the program:  
-  pip install pyeda
-  python run_experiments.py
+  pip install pyeda  
+  python run_experiments.py  
 
 Program Breakdown  
 1. Run Experiments (run_experiments.py)​  
