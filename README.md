@@ -1,25 +1,26 @@
 # PDB
-Project Title: Partial and Symbolic Pattern Database Implementations
-Description
-This project implements Partial Pattern Databases (PPDB) and Symbolic Pattern Databases (SPDB) for state-space search problems, such as sliding tile puzzles (e.g., 3x3, 4x4, and 5x5). It features two search algorithms:
+Project Title: Partial and Symbolic Pattern Database Implementations\n
+Description\n
+This project implements Partial Pattern Databases (PPDB) and Symbolic Pattern Databases (SPDB) for state-space search problems, such as sliding tile puzzles (e.g., 3x3, 4x4, and 5x5).\n
+It features two search algorithms:
 
 Partial A*: Uses PPDB as heuristics for faster state expansion.
 Symbolic Search: Utilizes SPDBs and Binary Decision Diagrams (BDDs) to efficiently represent large state spaces.
 This repository includes:
 
-PPDB generation using reverse Breadth-First Search .
+PPDB generation using reverse Breadth-First Search.
 SPDB construction using symbolic operations with BDDs.
 Search algorithms: Partial A* and Symbolic Search.
 Performance measurements: runtime, memory usage, and solution cost.
 
-Commands for excuting the program:
+Commands for executing the program:
 
 pip install pyeda
 
 python run_experiments.py
 
 Program Breakdown
-1. Run Experiments (run_experiments.py)​
+1. Run Experiments (run_experiments.py)​\n
  	a. Initialize Map and States: initial_map, start_state, goal_state
 	b. Run Full Pattern Database (PDB): run_pdb
 	c. Run Partial Pattern Database (PPDB): run_ppdb
